@@ -265,7 +265,6 @@ class TestObserved:
         assert obs.tag.test_value.shape == data.shape
         assert obs.tag.test_value.dtype == data.dtype
 
-
 def test_duplicate_vars():
     with pytest.raises(ValueError) as err:
         with pm.Model():
